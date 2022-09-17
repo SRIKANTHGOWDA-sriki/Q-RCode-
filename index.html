@@ -39,7 +39,7 @@
            <p class="mb-4"> helps to reach out for the website easily by a quick scan</p>
            <p>Enter the url to generate a url and download the image</p>
          
-         <form id="genearet-form" class="mt-4">
+         <form id="generate-form" class="mt-4">
           <input id="url" placeholder="enter a url"type="text"
            class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none mb-5">
            <select name="button" id="size" 
@@ -60,11 +60,11 @@
          </div>
       </div>
       <!-- Generator of Q-r code-->
-      <div class="max-w-5xl m-auto flex-col text-center align-center-justify-center mt-20">
+      <div id="generated" class="max-w-5xl m-auto flex-col text-center align-center-justify-center mt-20">
           <!--spinner-->
           <div id="spinner" role="status">
             <svg
-              class="inline mr-2 w-24 h-24 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+              class="inline mr-2 w-24 h-24 text-sky-800 animate-spin dark:text-gray-600 fill-blue-600"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,9 @@
             <span class="sr-only">Loading...</span>
           </div>
           <!--Q r code output-->
-          <div id="qrcode" class="m-auto"></div>
+          <div id="qrcode" class="m-auto">
+
+          </div>
 
 
       </div>
